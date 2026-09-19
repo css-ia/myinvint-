@@ -155,6 +155,9 @@
     .audio-btn.stop { background: #c0392b; color: #fff; border-color: #e74c3c; }
     .audio-btn.stop:hover { background: #a53125; }
     .audio-status { font-size: 0.82rem; color: var(--color-text-muted); font-weight: 600;}
+    .voice-help { background: #fff8e8; border-top: 1px dashed var(--color-brass); padding: 12px 24px; font-size: 0.85rem; line-height: 1.9; color: var(--color-text-main); }
+    .voice-help ol { padding-right: 20px; margin: 6px 0; }
+    .voice-help p { color: var(--color-text-muted); font-size: 0.8rem; }
     
     /* Highlight Style */
     .highlight-word {
@@ -658,8 +661,23 @@
         <div class="modal-audio-controls">
           <button class="audio-btn" id="playPauseBtn" onclick="togglePlayPause()">🔊 تشغيل الصوت</button>
           <button class="audio-btn stop" id="stopBtn" onclick="stopSpeech()">⏹️ إيقاف / إعادة</button>
+          <button class="audio-btn" id="voiceHelpBtn" onclick="toggleVoiceHelp()">❓ مساعدة الصوت</button>
         </div>
         <span class="audio-status" id="audioStatus">جاهز للاستماع</span>
+      </div>
+      <div class="voice-select-row">
+        <label for="voiceSelect">🎙️ الصوت:</label>
+        <select id="voiceSelect" aria-label="اختيار الصوت"></select>
+        <span class="voice-lang" id="voiceLang"></span>
+      </div>
+      <div class="voice-help" id="voiceHelp" hidden>
+        <b>🔧 تفعيل الصوت العربي على الأندرويد (مرة واحدة):</b>
+        <ol>
+          <li>الإعدادات ← الإدارة العامة ← اللغة والإدخال ← <b>تحويل النص إلى كلام</b>.</li>
+          <li>اختر محرك <b>Google</b> ثم ⚙️ ← تثبيت البيانات الصوتية ← <b>العربية</b>.</li>
+          <li>حدّث الصفحة واضغط تشغيل الصوت.</li>
+        </ol>
+        <p>ملاحظة: أي موقع إنترنت ممنوع أمنياً من فتح إعدادات هاتفك أو تغييرها — لذلك الخطوات يدوية، ولن تتكرر.</p>
       </div>
     </div>
   </div>
@@ -1064,7 +1082,9 @@
       const arVoice = pickArabicVoicePreferFemale();
       if (!arVoice) {
         status.textContent = 'لا يوجد صوت عربي بالجهاز';
-        showToast('لم يتم العثور على صوت عربي في هذا الجهاز — ثبّت الصوت العربي من إعدادات الهاتف: اللغة ثم تحويل النص إلى كلام');
+        const vh = document.getElementById('voiceHelp');
+        if (vh) vh.hidden = false;
+        showToast('لم يتم العثور على صوت عربي في هذا الجهاز — اتبع خطوات «مساعدة الصوت» بالأسفل');
         return;
       }
       currentUtterance.voice = arVoice;
@@ -1108,6 +1128,11 @@
           ${formatText(before)}<span class="highlight-word">${highlighted}</span>${formatText(after)}
         </div>
       `;
+    }
+
+    function toggleVoiceHelp() {
+      const vh = document.getElementById('voiceHelp');
+      if (vh) vh.hidden = !vh.hidden;
     }
 
     function stopSpeech() {
