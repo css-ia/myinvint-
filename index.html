@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="دليل الصناديق والجمعيات التأمينية بقطاع الأمن المركزي - الاستقطاعات ورسوم العضوية والمزايا 2026/2027">
-  <title>وكالة الاستثمار | دليل الصناديق والجمعيات التأمينية - نسخة v4 (تقرير A4 + شعارات شفافة)</title>
+  <title>وكالة الاستثمار | دليل الصناديق والجمعيات التأمينية - نسخة v5 (تسجيلات MP3)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -158,6 +158,9 @@
     .voice-help { background: #fff8e8; border-top: 1px dashed var(--color-brass); padding: 12px 24px; font-size: 0.85rem; line-height: 1.9; color: var(--color-text-main); }
     .voice-help ol { padding-right: 20px; margin: 6px 0; }
     .voice-help p { color: var(--color-text-muted); font-size: 0.8rem; }
+    .voice-select-row { background: #f0f3f7; padding: 8px 24px; border-top: 1px solid var(--color-border); display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--color-navy); font-weight: 600; flex-wrap: wrap; }
+    .voice-select-row select { flex: 1; min-width: 160px; padding: 6px 10px; border-radius: 6px; border: 1px solid var(--color-border); font-family: inherit; font-size: 0.85rem; color: var(--color-navy); background: #fff; }
+    .voice-lang { font-size: 0.78rem; color: var(--color-text-muted); background: #fff; border: 1px solid var(--color-border); border-radius: 12px; padding: 2px 10px; }
     
     /* Highlight Style */
     .highlight-word {
@@ -380,7 +383,7 @@
             </div>
             <div class="fund-card-body">
               <div class="logo-wrapper" onclick="openModal('alwalaa')" role="button" tabindex="0" aria-label="عرض نبذة صوتية عن صندوق الولاء" onkeydown="if(event.key==='Enter'||event.key===' ')openModal('alwalaa')">
-                <img src="assets/logo-alwalaa.webp" alt="شعار صندوق الولاء" class="card-logo" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Crect width='90' height='90' rx='14' fill='%23eef1f5'/%3E%3Ctext x='45' y='60' font-size='38' text-anchor='middle' fill='%23c5a059'%3E%E2%98%85%3C/text%3E%3C/svg%3E&quot;" loading="lazy" decoding="async" width="90" height="90">
+                <img src="assets/logos/logo-alwalaa.webp" alt="شعار صندوق الولاء" class="card-logo" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Crect width='90' height='90' rx='14' fill='%23eef1f5'/%3E%3Ctext x='45' y='60' font-size='38' text-anchor='middle' fill='%23c5a059'%3E%E2%98%85%3C/text%3E%3C/svg%3E&quot;" loading="lazy" decoding="async" width="90" height="90">
                 <div class="play-circle-badge">
                   <div class="play-triangle-icon"></div>
                 </div>
@@ -406,7 +409,7 @@
             </div>
             <div class="fund-card-body">
               <div class="logo-wrapper" onclick="openModal('ataa')" role="button" tabindex="0" aria-label="عرض نبذة صوتية عن صندوق العطاء" onkeydown="if(event.key==='Enter'||event.key===' ')openModal('ataa')">
-                <img src="assets/logo-ataa.webp" alt="شعار صندوق العطاء" class="card-logo" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Crect width='90' height='90' rx='14' fill='%23eef1f5'/%3E%3Ctext x='45' y='60' font-size='38' text-anchor='middle' fill='%23c5a059'%3E%E2%98%85%3C/text%3E%3C/svg%3E&quot;" loading="lazy" decoding="async" width="90" height="90">
+                <img src="assets/logos/logo-ataa.webp" alt="شعار صندوق العطاء" class="card-logo" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Crect width='90' height='90' rx='14' fill='%23eef1f5'/%3E%3Ctext x='45' y='60' font-size='38' text-anchor='middle' fill='%23c5a059'%3E%E2%98%85%3C/text%3E%3C/svg%3E&quot;" loading="lazy" decoding="async" width="90" height="90">
                 <div class="play-circle-badge">
                   <div class="play-triangle-icon"></div>
                 </div>
@@ -432,7 +435,7 @@
             </div>
             <div class="fund-card-body">
               <div class="logo-wrapper" onclick="openModal('abtal')" role="button" tabindex="0" aria-label="عرض نبذة صوتية عن جمعية الأبطال" onkeydown="if(event.key==='Enter'||event.key===' ')openModal('abtal')">
-                <img src="assets/logo-abtal.webp" alt="شعار جمعية الأبطال" class="card-logo" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Crect width='90' height='90' rx='14' fill='%23eef1f5'/%3E%3Ctext x='45' y='60' font-size='38' text-anchor='middle' fill='%23c5a059'%3E%E2%98%85%3C/text%3E%3C/svg%3E&quot;" loading="lazy" decoding="async" width="90" height="90">
+                <img src="assets/logos/logo-abtal.webp" alt="شعار جمعية الأبطال" class="card-logo" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Crect width='90' height='90' rx='14' fill='%23eef1f5'/%3E%3Ctext x='45' y='60' font-size='38' text-anchor='middle' fill='%23c5a059'%3E%E2%98%85%3C/text%3E%3C/svg%3E&quot;" loading="lazy" decoding="async" width="90" height="90">
                 <div class="play-circle-badge">
                   <div class="play-triangle-icon"></div>
                 </div>
@@ -457,7 +460,7 @@
             </div>
             <div class="fund-card-body">
               <div class="logo-wrapper" onclick="openModal('badr')" role="button" tabindex="0" aria-label="عرض نبذة صوتية عن جمعية بدر" onkeydown="if(event.key==='Enter'||event.key===' ')openModal('badr')">
-                <img src="assets/logo-badr.webp" alt="شعار جمعية بدر" class="card-logo" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Crect width='90' height='90' rx='14' fill='%23eef1f5'/%3E%3Ctext x='45' y='60' font-size='38' text-anchor='middle' fill='%23c5a059'%3E%E2%98%85%3C/text%3E%3C/svg%3E&quot;" loading="lazy" decoding="async" width="90" height="90">
+                <img src="assets/logos/logo-badr.webp" alt="شعار جمعية بدر" class="card-logo" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Crect width='90' height='90' rx='14' fill='%23eef1f5'/%3E%3Ctext x='45' y='60' font-size='38' text-anchor='middle' fill='%23c5a059'%3E%E2%98%85%3C/text%3E%3C/svg%3E&quot;" loading="lazy" decoding="async" width="90" height="90">
                 <div class="play-circle-badge">
                   <div class="play-triangle-icon"></div>
                 </div>
@@ -482,7 +485,7 @@
             </div>
             <div class="fund-card-body">
               <div class="logo-wrapper" onclick="openModal('alnour')" role="button" tabindex="0" aria-label="عرض نبذة صوتية عن جمعية النور" onkeydown="if(event.key==='Enter'||event.key===' ')openModal('alnour')">
-                <img src="assets/logo-alnour.webp" alt="شعار جمعية النور" class="card-logo" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Crect width='90' height='90' rx='14' fill='%23eef1f5'/%3E%3Ctext x='45' y='60' font-size='38' text-anchor='middle' fill='%23c5a059'%3E%E2%98%85%3C/text%3E%3C/svg%3E&quot;" loading="lazy" decoding="async" width="90" height="90">
+                <img src="assets/logos/logo-alnour.webp" alt="شعار جمعية النور" class="card-logo" onerror="this.onerror=null;this.src=&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Crect width='90' height='90' rx='14' fill='%23eef1f5'/%3E%3Ctext x='45' y='60' font-size='38' text-anchor='middle' fill='%23c5a059'%3E%E2%98%85%3C/text%3E%3C/svg%3E&quot;" loading="lazy" decoding="async" width="90" height="90">
                 <div class="play-circle-badge">
                   <div class="play-triangle-icon"></div>
                 </div>
@@ -724,35 +727,35 @@
     const fundInfoDetails = {
       alwalaa: {
         title: "صندوق الولاء لضباط قطاع الأمن المركزي",
-        logo: "assets/logo-alwalaa.webp",
+        logo: "assets/logos/logo-alwalaa.webp",
         history: "تأسس صندوق الولاء كأحد أهم الروافد التكافلية الأساسية بقطاع الأمن المركزي لتعزيز الاستقرار المالي والتكافلي للسادة الضباط وأسرهم.",
         nature: "صندوق تكافلي خاص يخضع لإشراف وكالة الاستثمار بالقطاع، ويعتمد على مبدأ التكافل الاجتماعي والادخار التراكمي لتقديم ميزة تكافلية كبرى عند نهاية الخدمة.",
         aims: "يوفر أعلى ميزة تأمينية تصل إلى 470,000 جنيه مصري، وتُضاف ميزة إضافية تصل إلى 50% (حتى 705,000 جنيه) وفق اللائحة والمدد المقررة، مع دعم حالات الوفاة أو العجز النهائي."
       },
       ataa: {
         title: "صندوق العطاء لضباط قطاع الأمن المركزي",
-        logo: "assets/logo-ataa.webp",
+        logo: "assets/logos/logo-ataa.webp",
         history: "أنشئ صندوق العطاء لتوسيع مظلة الحماية الاجتماعية وتوفير خيارات تكافلية إضافية مرنة تناسب مختلف الرتب والأعمار.",
         nature: "نظام ادخاري وتأميني تكافلي يدار وفق قواعد استثمارية آمنة تضمن تنمية اشتراكات الأعضاء وتحقيق أقصى عائد تكافلي.",
         aims: "يمنح ميزة تأمينية تصل إلى 350,000 جنيه مصري، وتُضاف ميزة إضافية تصل إلى 50% (حتى 525,000 جنيه) وفق اللائحة، ويعد خياراً مثالياً لبناء مظلة تكافلية مضاعفة."
       },
       abtal: {
         title: "جمعية الأبطال التكافلية",
-        logo: "assets/logo-abtal.webp",
+        logo: "assets/logos/logo-abtal.webp",
         history: "تأسست الجمعية بهدف تقديم خدمات تكافلية واجتماعية متميزة لأعضائها من الضباط، وتجسيد روح التآزر والولاء بين أبناء القطاع.",
         nature: "جمعية تكافلية مشهرة وتابعة للمظلة التكافلية لوكالة الاستثمار، تعتمد على الاشتراكات الشهرية لإنشاء صندوق للمزايا المالية المباشرة.",
         aims: "تصل الميزة التكافلية القصوى بها إلى 350,000 جنيه مصري، بالإضافة إلى تقديم مساندة عاجلة في الحالات الطارئة."
       },
       badr: {
         title: "جمعية بدر التكافلية",
-        logo: "assets/logo-badr.webp",
+        logo: "assets/logos/logo-badr.webp",
         history: "أنشئت جمعية بدر كجزء من منظومة الرعاية الاجتماعية الشاملة للضباط، لتوفير حماية مالية مستقرة عند التقاعد.",
         nature: "جمعية تكافلية تعاونية قائمة على المساهمة المباشرة، مع تنظيم دقيق لرسوم الانضمام والاستقطاعات وفق رتبة الضابط.",
         aims: "تقدم ميزة تأمينية قصوى تصل إلى 300,000 جنيه مصري، مع إمكانية دمجها مع بقية الأنظمة لتأمين مستقبل الأسرة."
       },
       alnour: {
         title: "جمعية النور التكافلية",
-        logo: "assets/logo-alnour.webp",
+        logo: "assets/logos/logo-alnour.webp",
         history: "تعد من الجمعيات التكافلية الرائدة بالقطاع، وتمتاز بفترة عضوية ممتدة تضمن تعظيم العائد والتأمين طويل الأجل.",
         nature: "نظام تكافلي ادخاري طويل الأجل يتطلب مدة اشتراك لا تقل عن 15 سنة لضمان الاستفادة الكاملة من المزايا المخصصة.",
         aims: "تصل ميزتها التأمينية إلى 200,000 جنيه مصري، وتتميز باستقرار مدفوعاتها وهيكلها التكافلي المتين."
@@ -772,6 +775,8 @@
     let currentUtterance = null;
     let audioEl = null;
     let currentAudioUrl = "";
+    let speechWords = [];
+    let lastAudioIdx = -1;
 
     function stopAudioFile() {
       if (audioEl) { try { audioEl.pause(); } catch(e) {} audioEl = null; }
@@ -965,9 +970,52 @@
       };
       return ars.slice().sort((a, b) => score(b) - score(a))[0];
     }
+    function isArVoice(v) { return !!(v && v.lang && v.lang.toLowerCase().replace('_', '-').startsWith('ar')); }
+    function voiceKey(v) { return v.voiceURI || ((v.name || '') + '|' + (v.lang || '')); }
+    function getChosenVoice() {
+      let saved = null;
+      try { saved = localStorage.getItem('investment_voice'); } catch(e) {}
+      if (!saved) return null;
+      return listVoices().find(v => voiceKey(v) === saved) || null;
+    }
+    function refreshVoiceList() {
+      const sel = document.getElementById('voiceSelect');
+      const langEl = document.getElementById('voiceLang');
+      if (!sel || !('speechSynthesis' in window)) return;
+      const voices = listVoices();
+      const ars = voices.filter(isArVoice);
+      const others = voices.filter(v => !isArVoice(v));
+      let saved = null;
+      try { saved = localStorage.getItem('investment_voice'); } catch(e) {}
+      sel.innerHTML = '';
+      const addGroup = (label, list) => {
+        if (!list.length) return;
+        const g = document.createElement('optgroup');
+        g.label = label;
+        list.forEach(v => {
+          const o = document.createElement('option');
+          o.value = voiceKey(v);
+          o.textContent = (v.name || 'صوت') + ' (' + (v.lang || '?') + ')';
+          g.appendChild(o);
+        });
+        sel.appendChild(g);
+      };
+      addGroup('الأصوات العربية', ars);
+      addGroup('كل الأصوات', others);
+      if (!voices.length) {
+        const o = document.createElement('option');
+        o.textContent = 'لا توجد أصوات — ثبّت الصوت العربي من مساعدة الصوت';
+        sel.appendChild(o);
+      }
+      const current = getChosenVoice() || pickArabicVoicePreferFemale() || voices[0];
+      if (current) {
+        sel.value = voiceKey(current);
+        if (langEl) langEl.textContent = 'اللغة: ' + (current.lang || '؟');
+      }
+    }
     if ('speechSynthesis' in window) {
       try { synth.getVoices(); } catch(e) {}
-      try { synth.onvoiceschanged = () => { try { synth.getVoices(); } catch(e) {} }; } catch(e) {}
+      try { synth.onvoiceschanged = () => { try { synth.getVoices(); } catch(e) {} refreshVoiceList(); }; } catch(e) {}
     }
 
     function openModal(fundKey) {
@@ -991,10 +1039,30 @@
       // Prepare Plain Text for Speech
       currentSpeechText = `نبذة وتاريخ النشأة.\n${data.history}\nماهية النظام وطبيعته.\n${data.nature}\nالأهداف والمزايا.\n${data.aims}`;
 
+      // فهرس الكلمات لتمييزها أثناء التشغيل (دقيق مع النطق الآلي، وتقديري مع MP3)
+      speechWords = [];
+      lastAudioIdx = -1;
+      try {
+        const wre = /\S+/g;
+        let wm;
+        while ((wm = wre.exec(currentSpeechText)) !== null) speechWords.push({ start: wm.index, len: wm[0].length });
+      } catch(e) {}
+
       // ملف صوتي مسجل لنفس الصندوق (إن وُجد) — الحل المضمون على كل الأجهزة
       currentAudioUrl = 'assets/audio/' + fundKey + '.mp3';
-      
+      refreshVoiceList();
+
       stopSpeech();
+
+      // إظهار شارة التسجيل الصوتي إن وُجد ملف MP3 (يعمل على أي جهاز دون إعدادات)
+      try {
+        fetch(currentAudioUrl, { method: 'HEAD' }).then(r => {
+          if (r && r.ok) {
+            const st = document.getElementById('audioStatus');
+            if (st) st.textContent = '🎙️ تسجيل صوتي جاهز — اضغط تشغيل';
+          }
+        }).catch(() => {});
+      } catch(e) {}
 
       document.getElementById('fundModal').classList.add('active');
       document.body.style.overflow = 'hidden';
@@ -1061,9 +1129,11 @@
         stopAudioFile();
         const a = new Audio(currentAudioUrl);
         audioEl = a;
+        lastAudioIdx = -1;
         btn.innerHTML = '⏸️ إيقاف مؤقت';
         status.textContent = 'جاري تشغيل التسجيل الصوتي...';
         a.onended = () => { audioEl = null; resetAudioUI(); };
+        a.ontimeupdate = () => updateAudioHighlight(a);
         a.onerror = () => { audioEl = null; startSpeechSynthesis(); };
         const pr = a.play();
         if (pr && pr.catch) pr.catch(() => { audioEl = null; startSpeechSynthesis(); });
@@ -1078,14 +1148,18 @@
       const status = document.getElementById('audioStatus');
       
       currentUtterance = new SpeechSynthesisUtterance(currentSpeechText);
-      // اختيار صوت عربي (يفضل الأنثوي) - ورفض التشغيل بالإنجليزية مع إرشاد المستخدم
-      const arVoice = pickArabicVoicePreferFemale();
+      // الصوت المختار يدوياً أولاً، ثم العربي المفضل تلقائياً
+      const chosen = getChosenVoice();
+      const arVoice = chosen || pickArabicVoicePreferFemale();
       if (!arVoice) {
         status.textContent = 'لا يوجد صوت عربي بالجهاز';
         const vh = document.getElementById('voiceHelp');
         if (vh) vh.hidden = false;
         showToast('لم يتم العثور على صوت عربي في هذا الجهاز — اتبع خطوات «مساعدة الصوت» بالأسفل');
         return;
+      }
+      if (chosen && !isArVoice(chosen)) {
+        showToast('تنبيه: الصوت المختار ليس عربياً — النطق قد يكون بلغة أخرى');
       }
       currentUtterance.voice = arVoice;
       currentUtterance.lang = arVoice.lang || 'ar-SA';
@@ -1112,6 +1186,18 @@
       };
 
       synth.speak(currentUtterance);
+    }
+
+    // تمييز تقديري للكلمة الحالية أثناء تشغيل MP3 (تناسبي مع زمن التسجيل)
+    function updateAudioHighlight(a) {
+      if (!a || audioEl !== a || !speechWords.length) return;
+      const d = a.duration;
+      if (!d || !isFinite(d) || d <= 0) return;
+      const idx = Math.min(speechWords.length - 1, Math.floor((a.currentTime / d) * speechWords.length));
+      if (idx !== lastAudioIdx) {
+        lastAudioIdx = idx;
+        highlightText(speechWords[idx].start, speechWords[idx].len);
+      }
     }
 
     function highlightText(startIndex, length) {
@@ -1147,6 +1233,7 @@
       const btn = document.getElementById('playPauseBtn');
       const status = document.getElementById('audioStatus');
       const modalBody = document.getElementById('modalBody');
+      lastAudioIdx = -1;
 
       if (btn) btn.innerHTML = '🔊 تشغيل الصوت';
       if (status) status.textContent = 'جاهز للاستماع';
@@ -1208,6 +1295,14 @@
     document.getElementById('chartBonusCheck').addEventListener('change', (e) => {
       setBonus(e.target.checked, true);
       showToast(e.target.checked ? "تم تفعيل احتساب الميزة الإضافية 50%" : "تم احتساب القيم الأساسية بدون الإضافي");
+    });
+
+    document.getElementById('voiceSelect').addEventListener('change', (e) => {
+      try { localStorage.setItem('investment_voice', e.target.value); } catch(err) {}
+      const v = getChosenVoice();
+      const langEl = document.getElementById('voiceLang');
+      if (langEl && v) langEl.textContent = 'اللغة: ' + (v.lang || '؟');
+      showToast(v ? ('تم اختيار الصوت: ' + (v.name || '')) : 'تم حفظ اختيار الصوت');
     });
 
     // رسم مقارن تفاعلي للمزايا
